@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Alley</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" >
+    <link rel="website icon" type="png" href="images/fasna amna.png">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo" data-aos="fade-down">Artisan Alley</div>
+        <button class="toggle-btn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav>
+          <ul class="menu" data-aos="fade-down">
+            <li><a href="index.html" data-aos="fade-down">Home</a></li>
+            <li><a href="about.html" data-aos="fade-down">About</a></li>
+            <li><a href="serives.html" data-aos="fade-down">Service</a></li>
+            <li><a href="contact.html" data-aos="fade-down">Contact</a></li>
+    
+          </ul>
+        </nav>
+      </header>
+
+    <section class="contact-section">
+        <div class="contact-container">
+          <!-- Contact Info -->
+          <div class="contact-info" data-aos="fade-right">
+            <h4>Start a Conversation</h4>
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out to us for inquiries, feedback, or collaborations.</p>
+            <div class="info-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 234 567 890</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>contact@artisanalley.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Artisan Alley Street, Creativity City</span>
+            </div>
+            <div class="social-icons">
+              <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+      
+          <!-- Contact Form -->
+          <div class="contact-form" data-aos="fade-left">
+            <form action="#" method="POST">
+              <h2>Get in Touch</h2>
+              <div class="form-group">
+                <input type="text" name="name" required placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" required placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <textarea name="message" rows="5" required placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      
+        <!-- Map -->
+        <div class="map" data-aos="zoom-in">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509488!2d144.95373541565436!3d-37.81627974202153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f0ad1ffb%3A0x5045675218ce720!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1649190395651!5m2!1sen!2sau"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+
+      <!-- footer section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Section 1: Logo and Social Icons -->
+      <div class="footer-logo-social">
+        <h2 class="footer-logo">Artisan Alley</h2>
+        <p class="footer-description">Crafting memories with love, one frame at a time.</p>
+        <div class="footer-social-icons">
+          <a href="#" class="social-icon facebook" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/_artisan__alley/" class="social-icon instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Section 2: Our Products -->
+      <div class="footer-products">
+        <h3>Our Products</h3>
+        <ul>
+          <li><a href="#frames">Frames</a></li>
+          <li><a href="#hampers">Hampers</a></li>
+          <li><a href="#cakes">Cakes</a></li>
+          <li><a href="#polaroids">Polaroids</a></li>
+        </ul>
+      </div>
+  
+      <!-- Section 3: Quick Links -->
+      <div class="footer-quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="serives.html">Services</a></li>
+        </ul>
+      </div>
+  
+      <!-- Section 4: Contact Information -->
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@artisanalley.com">info@artisanalley.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/1234567890">+123 456 7890</a></p>
+      </div>
+    </div>
+  </footer>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+      <script>
+         AOS.init({
+      duration: 3000, // Animation duration in ms
+      once: true      // Animation runs only once
+    });
+        document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.querySelector(".toggle-btn");
+    const menu = document.querySelector(".menu");
+  
+    toggleBtn.addEventListener("click", () => {
+      menu.classList.toggle("open");
+    });
+  });
+      </script>
+       
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artisan Alley</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="website icon" type="png" href="images/fasna amna.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #EBD6DC;
+    overflow-x: hidden;
+  }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 100px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  position: relative;
+  text-align: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  
+}
+
+.menu li a:hover {
+  color: #dca2b2;
+}
+
+/* Toggle Button for Mobile */
+.toggle-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-btn span {
+  background-color: #333;
+  height: 3px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Navbar */
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0 ;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .toggle-btn {
+    display: flex;
+    margin-left: 10rem;
+  }
+}
+
+
+/* About Header */
+
+.about-header {
+  text-align: center;
+  padding: 50px 20px;
+  /* background: linear-gradient(to right, #f6d4d9, #ebc1c8); */
+  color: #111010;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* About Content */
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Features Section */
+.about-features {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.about-features h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.feature {
+  padding: 20px;
+  background: #f6f6f6;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  line-height: 1.6;
+}
+
+
+  </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo" data-aos="fade-down">Artisan Alley</div>
+        <button class="toggle-btn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav>
+          <ul class="menu" data-aos="fade-down">
+            <li><a href="index.html" data-aos="fade-down">Home</a></li>
+            <li><a href="about.html" data-aos="fade-down">About</a></li>
+            <!-- <li><a href="/#bestseller/index.html" data-aos="fade-down">Best Sellers</a></li> -->
+            <!-- <li><a href="#our products" data-aos="fade-down">Our Products</a></li> -->
+            <li><a href="serives.html" data-aos="fade-down">Service</a></li>
+            <li><a href="contact.html" data-aos="fade-down">Contact</a></li>
+    
+          </ul>
+        </nav>
+      </header>
+
+  <section class="about-header" style="background: #eeecec;">
+    <h1>About Us</h1>
+    <p>Discover the story behind Artisan Alley – where creativity meets craftsmanship.</p>
+  </section>
+
+  <section class="about-content">
+    <div class="about-text">
+      <h2>Who We Are</h2>
+      <p>Artisan Alley is your one-stop destination for beautifully crafted items, designed with love and precision. From bespoke frames to delightful hampers, cakes, and polaroids, we strive to make every moment special and unforgettable.</p>
+      <p>Founded with a passion for creativity, we focus on bringing artistry to everyday life, blending modern trends with timeless designs.</p>
+    </div>
+    <div class="about-image" data-aos="fade-up">
+      <img src="images/gift box.jpg" alt="Artisan Alley Story">
+    </div>
+  </section>
+
+  <section class="about-features">
+    <h2>Why Choose Us?</h2>
+    <div class="features-grid">
+      <div class="feature" data-aos="zoom-in">
+        <h3>Unique Designs</h3>
+        <p>Every product is crafted to stand out and reflect your individuality.</p>
+      </div>
+      <div class="feature" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Premium Quality</h3>
+        <p>We ensure every item meets the highest standards of quality and aesthetics.</p>
+      </div>
+      <div class="feature" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Personal Touch</h3>
+        <p>Customizable options to create something uniquely yours.</p>
+      </div>
+      <div class="feature" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Timely Delivery</h3>
+        <p>Your happiness is our priority – on time, every time.</p>
+      </div>
+    </div>
+  </section>
+
+    <!----------------------------get touch  ---------------- -->
+    <section class="cta">
+      <h2>Get Started Today!</h2>
+      <p>Reach out to us to make your moments memorable with our services.</p>
+      <a href="https://www.instagram.com/_artisan__alley/"><button>Contact Us</button></a>
+    </section>
+
+<!-- footer section -->
+<footer class="footer">
+    <div class="footer-container">
+      <!-- Section 1: Logo and Social Icons -->
+      <div class="footer-logo-social">
+        <h2 class="footer-logo">Artisan Alley</h2>
+        <p class="footer-description">Crafting memories with love, one frame at a time.</p>
+        <div class="footer-social-icons">
+          <a href="#" class="social-icon facebook" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/_artisan__alley/" class="social-icon instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Section 2: Our Products -->
+      <div class="footer-products">
+        <h3>Our Products</h3>
+        <ul>
+          <li><a href="#frames">Frames</a></li>
+          <li><a href="#hampers">Hampers</a></li>
+          <li><a href="#cakes">Cakes</a></li>
+          <li><a href="#polaroids">Polaroids</a></li>
+        </ul>
+      </div>
+  
+      <!-- Section 3: Quick Links -->
+      <div class="footer-quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="serives.html">Services</a></li>
+        </ul>
+      </div>
+  
+      <!-- Section 4: Contact Information -->
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@artisanalley.com">info@artisanalley.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/1234567890">+123 456 7890</a></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000, // Animation duration in ms
+      once: true      // Animation runs only once
+    });
+  </script>
+</body>
+</html>
